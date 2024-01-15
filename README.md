@@ -1,3 +1,7 @@
+# Node.js and Firebase
+
+Simple CRUD using Node.js and the firebase cloud database.
+
 # Getting Started
 
 ## Step 1: Init project
