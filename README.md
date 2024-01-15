@@ -1,6 +1,6 @@
 # Getting Started
 
-## Step 1: Init
+## Step 1: Init project
 
 Init new project Node.js and install express firebase-admin
 
