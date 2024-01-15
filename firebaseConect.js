@@ -21,6 +21,7 @@ app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
 
+// Adicionando ao banco de dados...
 app.post('/create',async (req,res) => {
     try {
         const id = req.body.nomeCientifico;
@@ -38,6 +39,7 @@ app.post('/create',async (req,res) => {
     }
 })
 
+// Listando todo o banco de dados...
 app.get('/read/all', async (req, res) => {
     try{
         const usersRef = db.collection("Fauna");
@@ -52,6 +54,7 @@ app.get('/read/all', async (req, res) => {
     }
 })
 
+// Listando uma unica coisa do banco de dados...
 app.get('/read/:id', async (req,res) => {
     try{
         const userRef = db.collection("Fauna").doc(req.params.id);
@@ -62,6 +65,7 @@ app.get('/read/:id', async (req,res) => {
     }
 })
 
+// Atualizando o banco de dados...
 app.post('/update/:id', async(req,res) => {
     try {
         const id = req.params.id;
@@ -81,6 +85,7 @@ app.post('/update/:id', async(req,res) => {
     }
 })
 
+// Deletando por id passado no banco de dados...
 app.delete('/delete/:id', async (req, res) => {
     try {
         const response = await db.collection("Fauna").doc(req.params.id).delete();
