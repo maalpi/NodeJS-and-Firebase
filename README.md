@@ -1,6 +1,6 @@
 # Node.js and Firebase
 
-Simple CRUD using Node.js and the firebase cloud database.
+Simple CRUD that adds information about a species of animal using Node.js and the firebase cloud database.
 
 # Getting Started
 
